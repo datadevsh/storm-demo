@@ -17,7 +17,7 @@ public class CountBolt extends BaseBasicBolt {
 
         String word = tuple.getStringByField("word");
         Integer num = tuple.getIntegerByField("num");
-        if (map.contains(word)) {
+        if (map.containsKey(word)) {
             map.put(word, map.get(word) + num);
         } else {
             map.put(word, num);

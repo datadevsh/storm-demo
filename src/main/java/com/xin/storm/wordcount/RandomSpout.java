@@ -27,7 +27,7 @@ public class RandomSpout extends BaseRichSpout {
         int i = random.nextInt(sentences.length);
         String sentence = sentences[i];
         try {
-            Thread.sleep(100);
+            Thread.sleep(3000);
         } catch (Exception e) {
             e.printStackTrace();
         }
