@@ -14,7 +14,7 @@ public class HashMapSync implements Runnable {
     private String[] sentences = new String[]{"my", "storm", "word", "count", "Supervisor", "summary", "Topology", "Name"};
     private Random random = new Random();
 
-    private static HashMap<String, Integer> map = new HashMap<>();
+    private static HashMap<String, Integer> map = new HashMap<String, Integer>();
 
     public static void main(String[] args) {
 
@@ -23,7 +23,6 @@ public class HashMapSync implements Runnable {
         }
     }
 
-    @Override
     public void run() {
 
         int i = random.nextInt(sentences.length);

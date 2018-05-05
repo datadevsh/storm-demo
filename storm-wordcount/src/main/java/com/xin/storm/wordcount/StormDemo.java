@@ -13,7 +13,7 @@ public class StormDemo {
         TopologyBuilder builder = new TopologyBuilder();
         builder.setSpout("randomSpout", new RandomSpout());
         builder.setBolt("splitBolt", new SplitBolt()).localOrShuffleGrouping("randomSpout");
-        builder.setBolt("countBolt", new CountBolt(),3).localOrShuffleGrouping("splitBolt");
+        builder.setBolt("countBolt", new CountBolt()).localOrShuffleGrouping("splitBolt");
 
         Config conf = new Config();
         conf.setDebug(false);
