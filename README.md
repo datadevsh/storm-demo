@@ -1,5 +1,5 @@
 # storm-demo
-storm demo，包括java并发问题测试。    
+storm demo，包括storm与其他组件的组合，以及java并发问题测试。    
 
 
 ## 1.wordcount
@@ -23,3 +23,14 @@ storm-hdfs
 ```
 hadoop fs -chmod 777  /storm-hdfs
 ```
+
+## 5.storm ack机制测试
+storm-ack
+
+开启测试，需要用com.xin.storm.ack.RandomAckBolt2.execute()注释里面的代码。
+
+## 6.storm的定时器以及与mysql的整合
+storm-mysql
+
+打包插件：maven-assembly-plugin
+
