@@ -18,3 +18,8 @@ storm-kafka
 
 ## 4.storm与HDFS整合
 storm-hdfs
+
+一定要给hdfs上的文件夹更改权限，否则hdfs上不会产生数据   
+```
+hadoop fs -chmod 777  /storm-hdfs
+```
